@@ -18,8 +18,9 @@ html {
   }
   
   body {
-    background-size: cover;
+    background-size: 100%;
     background-image: url("img/1010066.png");
+    display: inline-flexbox;
   }
   
   .main {
@@ -28,7 +29,7 @@ html {
     display: flex;
     justify-content: left;
     flex-direction: row;
-    gap: 30rem;
+    gap: 3rem;
   }
   
   .titulo {
