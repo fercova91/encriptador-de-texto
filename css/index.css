@@ -18,7 +18,7 @@ html {
   }
   
   body {
-    background-size: 100%;
+    background-size: cover;
     background-image: url("img/1010066.png");
   }
   
