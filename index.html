@@ -1,37 +1,46 @@
 <!DOCTYPE html>
+
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Encriptador de Texto con JavaScript</title>
-  <link rel="stylesheet" href="css/index.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto con JavaScript</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
 
-</head>
-<body>
-  <h1 class="titulo">JavaScript Text Encryptor </h1>
+  <body>
+    <h1 class="titulo">JavaScript Text Encryptor </h1>
 
 
-  <main class="main">
-    <section class="form box">
-      <form id="formulario">
-        <label for="input-texto">Solo letras minúsculas, sin acentos</label>
-        <textarea class="text-input" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui" rows="5" cols="50"></textarea>
-        <div class="button-container">
-          <input class="btn" type="submit" value="Encriptar 🔒" id="btn-encriptar">
-          <input class="btn" type="submit" value="Desencriptar 🔓" id="btn-desencriptar">
-        </div>
-      </form>
-    </section>
+    <main class="main">
+      <section class="form box">
+          <form id="formulario">
+            <label for="input-texto">Solo letras minúsculas, sin acentos</label>
+            <textarea class="text-input" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui" rows="5" cols="50"></textarea>
+            <div class="button-container">
+              <input class="btn" type="submit" value="Encriptar 🔒" id="btn-encriptar">
+              <input class="btn2" type="submit" value="Desencriptar 🔓" id="btn-desencriptar">
+            </div>
+          </form>
+      </section>
+    
+      <section class="msg box">
+        <h2><label for="mensaje-texto">Mensaje <br>encriptado:</label></h2>
+        <textarea class="text-input" cols="50" id="mensaje-texto" name="mensaje-texto" rows="5"></textarea>
+        <input class="btn" type="submit" value="Copiar texto" id="btn-copy">
+      </section>
+    </main>
+
+
+    <script src="js/index.js"></script>
+  </body>
   
-    <section class="msg box">
-      <h2><label for="mensaje-texto">Mensaje <br>encriptado:</label></h2>
-      <textarea class="text-input" cols="50" id="mensaje-texto" name="mensaje-texto" rows="5"></textarea>
-      <input class="btn" type="submit" value="Copiar texto" id="btn-copy">
-    </section>
-  </main>
-
-
-  <script src="js/index.js"></script>
-</body>
+  <footer>
+    <p class="nombre">Fernando Covarrubias Catarino <br><a href="https://github.com/fercova91">
+      <img class="logos" src="css/img/github.png" alt="logo github">
+    </a> <a href="https://www.linkedin.com/in/fernando-covarrubias-93365b258/">
+    <img class="logos" src="css/img/linkedin.png" alt="logo linkedin">
+    </a></p>
+  </footer>
 </html>
