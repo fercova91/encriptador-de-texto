@@ -64,7 +64,7 @@ function desencriptarTexto(e) {
     inputResultado.value = resultado;
   } else {
     mostrarError('Solo se permiten letras minúsculas, sin acentos');
-
+    return;
   }  
 }
 
@@ -89,6 +89,6 @@ function copiarTexto(e) {
     e.preventDefault(); 
     const mensaje = inputResultado.value;
 
-    const writeText = navigator.clipboard.writeText(mensaje);
+    navigator.clipboard.writeText(mensaje);
 
 }
