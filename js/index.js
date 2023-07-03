@@ -36,7 +36,7 @@ function encriptarTexto(e) {
     inputResultado.value = resultado;
   } else {
     mostrarError('Solo se permiten letras minúsculas, sin acentos');
-
+    return;
   }  
 }
 
@@ -90,5 +90,4 @@ function copiarTexto(e) {
     const mensaje = inputResultado.value;
 
     navigator.clipboard.writeText(mensaje);
-
 }
